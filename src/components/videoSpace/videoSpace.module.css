@@ -1,0 +1,15 @@
+.stage > .participantTile {
+  grid-column: span 1;
+}
+
+/* Single card takes full width */
+.stage > :nth-child(1):nth-last-child(1) {
+  grid-column: span 2;
+}
+
+/* 3 cards: last card takes 3/4 space and is centered */
+.stage > :nth-child(3):nth-last-child(1) {
+  grid-column: span 2;
+  justify-self: center;
+  width: 49%;
+}
